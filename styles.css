@@ -12,6 +12,7 @@ Makes use of grid layout (look at code for this, direct link to CSS file is uplo
 
 a {
     color: brown;
+    text-decoration: none;
 }
 a:active {
     color: #FCF5D8;
