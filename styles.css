@@ -1,0 +1,154 @@
+/*
+This portfolio page has been made in partial fulfillment of the requirements of MITxPro Emeritus' course: Professional Certificate in Coding: Women's Cohort - August 2021
+
+Styling includes: 
+Font Color 
+Image (1 or more) 
+Styled links: links should not just be blue and underlined 
+Navigation 
+Makes use of grid layout (look at code for this, direct link to CSS file is uploaded) [sic] Note: These guidelines are from the course materials. The author of this page is not responsible for their lack of clarity. ()^_^
+*/
+/*Alphabetically arranged:*/
+
+a {
+    color: brown;
+}
+a:active {
+    color: #FCF5D8;
+}
+a:hover {
+    color: chocolate;
+}
+body {
+    font: 1em/150% Georgia; padding: 1em; margin: 0 auto; max-width: 33em;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    }
+    
+    .content{
+        display: grid;
+        grid-template-columns: repeat(5, 5fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 5px;
+        height:100%;
+        width: 100%;
+        position: relative; 
+    }
+    .footer {
+        background-color: burlywood;
+        border: 1px solid brown;
+        font-size: small;
+        grid-column: 1/6;
+        grid-row: 6;
+        height: 25px;
+        margin-top: 8px;
+        position: relative;        
+        text-align: center;
+        }
+        
+    
+h1 {
+    color: black;
+    font-weight: bold;
+    gap: 7px;
+    grid-row: 2;
+    text-shadow: 2px 2px 1px burlywood;
+    text-align: center;
+    line-height: 1;
+    margin: 25;
+    }
+html {
+    background-color: #FCF5D8;
+    background-image: url("images/birds-rabbit-floral-wallpaper3.png");
+    }
+img{
+    grid-column: 3;
+    grid-row: 3;
+    }
+main {
+  display: grid;
+  grid-template-columns:
+  minmax(5rem, 5fr)
+  minmax(auto, 65ch)
+  minmax(5rem, 5fr);
+    }
+      /* Center all children */
+    main > * {
+        grid-column: 3;
+    }
+    .navbar{
+        background-color: burlywood;
+        border: 1px solid brown;
+        font-weight: bold;
+        grid-column: 1/6;
+        grid-row: 1;
+        height: 35px;
+        position: relative;
+        text-align: center;
+    } 
+    .nav-link{
+        align-items: center;
+        gap: 5px;
+        letter-spacing: normal;
+        margin-left: 8px;
+        word-spacing: 5em;
+    } 
+    .nav-link-active{
+        color: #FCF5D8;
+        margin-left: 8px;
+    }
+p {
+    grid-row: 3;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    word-wrap: normal;
+    }
+        
+    #p2 {
+        grid-row: 4;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+        word-wrap: normal;
+        }
+    #p3{
+        grid-column: 3/4;
+        grid-row: 5;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+        word-wrap: normal;
+    }
+
+    #pp1 {
+        grid-column: 3;
+        grid-row: 3/4;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+        word-wrap: normal;
+        }
+
+video{
+    grid-column: 3;
+    grid-row: 3;
+}
+    #vp1 {
+        grid-row: 4;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+        }
+    #vp2 {
+        grid-row: 5;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+    }

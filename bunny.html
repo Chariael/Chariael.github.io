@@ -1,0 +1,76 @@
+<!-- This portfolio page has been made in partial fulfillment of the requirements of MITxPro Emeritus' course: Professional Certificate in Coding: Women's Cohort - August 2021
+
+Bio includes: 
+Minimum 50 words 
+Photo 
+GitHub username 
+Linkedin link 
+Contact Information (Email address or best way to contact otherwise) 
+
+Website includes: 
+Landing page 
+Projects page (2 or more Project titles; Links to GitHub repositories; Project descriptions (1 - 5 sentences per project)
+Navigation Bar
+Video which gives overview of your work and skills; Uploaded to Youtube; Embedded in website; Length of 2 minutes or less
+Use of bootstrap, with evidence of import to GitHub pages page
+-->
+<!-- This page is, of course, just for fun-->
+
+<html>
+    <head>
+        <title>Hazel's Bunny Page</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <div id='bunny'>
+        <button onclick='makeOne()' width='200' height='30'>Add Bunny</button>
+
+    </div>
+<main class="content">
+
+
+</div>
+
+
+</main>
+<SCRIPT>
+    var pos = 0;
+    const bunArray = [
+        ['images/HazelCartoon2.png']
+    ];
+    var direction = 0;
+    const bunnies = []; // This array holds all the pacmen
+
+    function setToRandom(scale) {
+        return {
+            x: Math.random() * scale,
+            y: Math.random() * scale
+        }
+    }
+    // Factory to make a PacMan at a random position with random velocity
+    function makeBun() {
+        // returns an object with random values scaled {x: 33, y: 21}
+        let velocity = setToRandom(10); // {x:?, y:?}
+        let position = setToRandom(200);
+        // Add images to div id = game
+        let bunny = document.getElementById('bunny');
+        let newImg = document.createElement('img');
+        newImg.style.position = 'absolute';
+        newImg.src = 'images/HazelCartoon2.png';
+        newImg.width = 100;
+        newImg.style.left = position.x;
+        newImg.style.top = position.y;
+        bunny.appendChild(newImg);
+        return {
+            position,
+            velocity,
+            newImg
+        }
+    }
+
+    function makeOne() {
+        bunnies.push(makeBun()); // add a new bunny
+    }
+</SCRIPT>
+
+
+</html>
