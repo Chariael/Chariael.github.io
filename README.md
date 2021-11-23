@@ -2,7 +2,7 @@
 Charlotte Royal Moline's Online Presence
 
 
-<!-- This portfolio page has been made in partial fulfillment of the requirements of MITxPro Emeritus' course: Professional Certificate in Coding: Women's Cohort - August 2021
+This portfolio page has been made in partial fulfillment of the requirements of MITxPro Emeritus' course: Professional Certificate in Coding: Women's Cohort - August 2021
 
 
 <b>Requirements</b>
@@ -19,4 +19,4 @@ Projects page (2 or more Project titles; Links to GitHub repositories; Project d
 Navigation Bar
 Video which gives overview of your work and skills; Uploaded to Youtube; Embedded in website; Length of 2 minutes or less
 Use of bootstrap, with evidence of import to GitHub pages page
--->
+
