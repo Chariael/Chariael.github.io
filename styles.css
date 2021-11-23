@@ -98,6 +98,7 @@ main {
         margin-left: 8px;
     }
 p {
+    grid-column: 2/5;
     grid-row: 3;
     font-size: 16px;
     line-height: 1.5;
@@ -107,6 +108,7 @@ p {
     }
         
     #p2 {
+        grid-column: 2/5;
         grid-row: 4;
         font-size: 16px;
         line-height: 1.5;
@@ -115,7 +117,7 @@ p {
         word-wrap: normal;
         }
     #p3{
-        grid-column: 3/4;
+        grid-column: 2/5;
         grid-row: 5;
         font-size: 16px;
         line-height: 1.5;
@@ -125,7 +127,7 @@ p {
     }
 
     #pp1 {
-        grid-column: 3;
+        grid-column: 2/5;
         grid-row: 3/4;
         font-size: 16px;
         line-height: 1.5;

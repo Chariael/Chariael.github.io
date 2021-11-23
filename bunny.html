@@ -22,7 +22,7 @@ Use of bootstrap, with evidence of import to GitHub pages page
     <link rel="stylesheet" href="styles.css">
     </head>
     <div id='bunny'>
-        <button onclick='makeOne()' width='200' height='30'>Add Bunny</button>
+        <button onclick='makeOne()' width='200' height='30' style="margin-top: 30px;">Add Bunny</button>
 
     </div>
 <main class="content">
@@ -46,11 +46,10 @@ Use of bootstrap, with evidence of import to GitHub pages page
             y: Math.random() * scale
         }
     }
-    // Factory to make a PacMan at a random position with random velocity
+    // Factory to make a PacMan at a random position
     function makeBun() {
         // returns an object with random values scaled {x: 33, y: 21}
-        let velocity = setToRandom(10); // {x:?, y:?}
-        let position = setToRandom(200);
+        let position = setToRandom(750);
         // Add images to div id = game
         let bunny = document.getElementById('bunny');
         let newImg = document.createElement('img');
